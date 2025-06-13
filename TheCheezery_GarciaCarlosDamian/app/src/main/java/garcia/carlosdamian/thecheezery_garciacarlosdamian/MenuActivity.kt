@@ -14,10 +14,10 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        var btnCold: Button = findViewById(R.id.button_cold_drinks) as Button
+        val btnCold: Button = findViewById(R.id.button_cold_drinks)
 
-        btnCold.setOnClickListener{ it;
-            var intent: Intent = Intent(this, ProductosActivity:: class.java)
+        btnCold.setOnClickListener {
+            val intent = Intent(this, ProductosActivity::class.java)
             startActivity(intent)
         }
     }

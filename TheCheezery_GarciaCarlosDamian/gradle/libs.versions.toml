@@ -1,15 +1,19 @@
+# Contenido corregido para gradle/libs.versions.toml
+
 [versions]
-agp = "8.8.0"
+# Versiones estables y compatibles
+agp = "8.10.1"
 kotlin = "1.9.24"
-coreKtx = "1.15.0"
+coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
 material = "1.12.0"
-activity = "1.10.0"
-constraintlayout = "2.2.0"
-adsMobileSdk = "0.16.0-alpha01"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+# Versión de la librería de anuncios OFICIAL Y CORRECTA
+playServicesAds = "23.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -20,7 +24,10 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-ads-mobile-sdk = { group = "com.google.android.libraries.ads.mobile.sdk", name = "ads-mobile-sdk", version.ref = "adsMobileSdk" }
+
+# LIBRERÍA DE ANUNCIOS OFICIAL Y CORRECTA
+play-services-ads = { group = "com.google.android.gms", name = "play-services-ads", version.ref = "playServicesAds" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
