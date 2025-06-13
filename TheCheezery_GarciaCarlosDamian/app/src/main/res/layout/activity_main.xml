@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_grey"
-    tools:context=".MainActivity">
+    tools:context="garcia.carlosdamian.thecheezery_garciacarlosdamian.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
         android:textAlignment="center"
         android:padding="15dp"
         />
-    
+
     <Button
         android:id="@+id/button_get_started"
         android:layout_width="219dp"
